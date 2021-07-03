@@ -1,44 +1,46 @@
 // Next modules
-import Link from 'next/link';
-import Image from 'next/image';
 import Head from 'next/head'
 // Styless
 import styles from '../styles/HomeView.module.css'
 // Axios 
 import axios from 'axios'
-import PokeList from '../components/PokeList';
+//Custom Componets
+import ProductList from '../components/ProductList';
+import NavBar from '../components/NavBar';
 
-const HomeView = ({ pokemons }) => {
 
+const HomeView = ({ products }) => {
 
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>PokeDex</title>
+        <title>MyShop</title>
       </Head>
-      <div>
-        <div>NavBar</div>
+      <div className="container ">
+        <NavBar />
         <div>
-          <h1>Header Pokedex</h1>
-          <div>
-            <PokeList pokemons={pokemons} />
+          <h1>Header Shop</h1>
+          <div className="product-row">
+            <ProductList products={products} />
           </div>
+          
         </div>
+        <div>Footer</div>
       </div>
     </>
   )
 }
 
 export const getStaticProps = async () => {
-  const res = await axios.get('https://pokeapi.co/api/v2/pokemon/?limit=160&offset=60.');
-  const pokemons = await res.data;
+  const res = await axios.get('https://fakestoreapi.com/products');
+  const products = await res.data;
 
 
   return {
     props: {
-      pokemons
+      products
     }
   }
 }
