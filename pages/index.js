@@ -7,6 +7,7 @@ import axios from 'axios'
 //Custom Componets
 import ProductList from '../components/ProductList';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 
 const HomeView = ({ products }) => {
@@ -21,13 +22,13 @@ const HomeView = ({ products }) => {
       <div className="container ">
         <NavBar />
         <div>
-          <h1>Header Shop</h1>
           <div className="product-row">
+          <h1>Header Shop</h1>
             <ProductList products={products} />
           </div>
           
         </div>
-        <div>Footer</div>
+        <Footer />
       </div>
     </>
   )

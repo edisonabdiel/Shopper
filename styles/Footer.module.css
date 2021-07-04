@@ -12,8 +12,8 @@
     cursor: pointer;
     pointer-events: none;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    bottom: 20px;
+    left: 675px;
 }
 
 .menu:hover {
