@@ -1,10 +1,3 @@
-.body {
-    background-color: #000000;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: 'Lato', sans-serif;
-    margin: 20px;
-}
-
 .menu {
     text-transform: uppercase;
     color: rgba(7, 7, 7, 0.8);
@@ -12,6 +5,7 @@
     cursor: pointer;
     pointer-events: none;
     position: absolute;
+    padding: 10px;
     top: 20px;
     left: 20px;
 }
@@ -39,7 +33,7 @@
 .spacer:before {
     content: "";
     position: absolute;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ff0000;
     height: 1px;
     width: 0%;
     transition: width 0.25s ease;

@@ -3,51 +3,57 @@ import Link from 'next/link';
 // Custom Components
 import Meta from '../../../components/Meta';
 import NavBar from '../../../components/NavBar';
+// Framer Motion
+import { motion } from 'framer-motion';
 // Axios
 import axios from 'axios';
+// Variants 
+import { imgSlide, fadeInUp, staggerFast, fadeIn, fadeInSlide } from '../../../variants';
 
 const ProductPage = ({ product }) => {
   return (
-    <div>
+    <motion.div exit={{opacity: 0 }} initial='initial' animate='animate' variants={staggerFast} >
       <Meta />
       <NavBar />
       <div className='fullscreen'>
         <div className='product'>
           <div className='img'>
-            <img key={product.image} src={product.image} />
+            <motion.img variants={imgSlide}
+              key={product.image} src={product.image} />
           </div>
           <div className='product-details'>
             <div className='inner'>
               <Link href='/'>
-                <div>
+                <motion.div variants={fadeInUp}>
                   <p className='go-back'>Back to products</p>
-                </div>
+                </motion.div>
               </Link>
-              <div>
+              <motion.div variants={fadeInUp}>
                 <span className='category'>{product.category}</span>
-              </div>
-              <h1>{product.name}</h1>
-              <p>{product.description}</p>
-              <div className='additonals'>
+              </motion.div>
+              <motion.h1 variants={fadeInUp} >{product.title}</motion.h1>
+              <motion.p variants={fadeInUp} >{product.description}</motion.p>
+              <motion.div variants={fadeInSlide} className='additonals'>
                 <span>Free Shipping</span>
-              </div>
-              <div className='qty-price'>
+                <span>In Stock</span>
+              </motion.div>
+              <motion.div variants={fadeInUp} className='qty-price'>
                 <div className='qty'>
                   <div className='minus'>-</div>
                   <div className='amount'>1</div>
                   <div className='add'>+</div>
                 </div>
                 <span className='price'>{'€' + product.price}</span>
-              </div>
-              <div className='btn-row'>
+              </motion.div>
+              <motion.div variants={fadeInSlide} className='btn-row'>
                 <button className='add-to-cart'> Add to cart</button>
                 <button className='subscribe'> Subscribe</button>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 
 }
