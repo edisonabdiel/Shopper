@@ -25,7 +25,7 @@
 }
 
 .image {
-  height: 9em;
+  height: 10.5em;
   width: 14em;
   padding: 1em 2em;
   position: Absolute;
@@ -57,7 +57,7 @@
 }
 .card:hover .image
 {
-  height:10em;
+  height:11em;
 }
 
 .card:hover 

@@ -1,19 +1,12 @@
-.body {
-    background-color: #000000;
-    color: rgba(255, 255, 255, 0.7);
-    font-family: 'Lato', sans-serif;
-    margin: 20px;
-}
-
 .menu {
     text-transform: uppercase;
     color: rgba(7, 7, 7, 0.8);
     display: inline-block;
     cursor: pointer;
     pointer-events: none;
-    position: absolute;
+    position: relative;
     bottom: 20px;
-    left: 675px;
+    left: 670px;
 }
 
 .menu:hover {
