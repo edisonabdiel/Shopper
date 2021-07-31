@@ -7,14 +7,16 @@ import NavBar from '../../../components/NavBar';
 import { motion } from 'framer-motion';
 // Axios
 import axios from 'axios';
-// Variants 
+// Variants - Animations
 import { imgSlide, fadeInUp, staggerFast, fadeIn, fadeInSlide } from '../../../variants';
 
 const ProductPage = ({ product }) => {
   return (
     <motion.div exit={{opacity: 0 }} initial='initial' animate='animate' variants={staggerFast} >
       <Meta />
-      <NavBar />
+      <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }} variants={fadeIn}>
+        <NavBar />
+      </motion.div>
       <div className='fullscreen'>
         <div className='product'>
           <div className='img'>

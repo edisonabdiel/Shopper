@@ -2,7 +2,7 @@
 import styles from '../styles/ProductCard.module.css';
 // Framer Motion modules
 import { motion } from 'framer-motion';
-// Variants
+// Variants - Animations
 import { imgPop } from '../variants';
 
 const ProductCard = ({ product }) => {

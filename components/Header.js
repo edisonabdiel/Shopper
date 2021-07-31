@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <>
-            <h1>Best Online Shop</h1>
+            <h1>Self-Made Online Shop</h1>
         </>
     )
 }

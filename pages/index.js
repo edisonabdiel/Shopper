@@ -8,7 +8,7 @@ import Meta from '../components/Meta';
 import Header from '../components/Header';
 // Framer Motion modules
 import { motion } from 'framer-motion';
-// Variants
+// Variants - Animations
 import { fadeInUp, stagger, fadeIn, fadeInSlide } from '../variants'
 
 
