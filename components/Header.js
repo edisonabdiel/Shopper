@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <>
-            <h1>Self-Made Online Shop</h1>
+            <h1>Your Online Shop</h1>
         </>
     )
 }
