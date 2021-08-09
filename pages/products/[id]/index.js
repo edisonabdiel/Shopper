@@ -25,7 +25,7 @@ const ProductPage = ({ product }) => {
           </div>
           <div className='product-details'>
             <div className='inner'>
-              <Link href='/'>
+              <Link href='/' passHref>
                 <motion.div variants={fadeInUp}>
                   <p className='go-back'>Back to products</p>
                 </motion.div>

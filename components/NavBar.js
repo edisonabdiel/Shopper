@@ -10,10 +10,10 @@ const NavBar = () => {
                 <div className={styles.menu}>
                     <div className={styles.label}>MENU</div>
                     <div className={styles.spacer}></div>
-                    <Link href='/'>
+                    <Link href='/' passHref>
                         <div className={styles.item}><span className={styles.span}>Home</span></div>
                     </Link>
-                    <Link href='/cart'>
+                    <Link href='/cart' passHref>
                     <div className={styles.item}><span className={styles.span}>Cart</span></div>
                     </Link>
                     <div className={styles.item}><span className={styles.span}>Profile</span></div>

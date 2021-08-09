@@ -17,7 +17,7 @@ const ProductList = ({ products }) => {
                     <Link
                         key={product.id}
                         href='/products/[id]'
-                        as={`/products/${product.id}`}>
+                        as={`/products/${product.id}`} passHref>
                         <motion.div exit={{opacity: 0}} variants={fadeInUp}>
                             <ProductCard key={product.id} product={product} />
                         </motion.div>
