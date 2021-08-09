@@ -1,6 +1,8 @@
 
 <img width="1415" alt="Screenshot 2021-07-31 at 17/53/14" src="https://user-images.githubusercontent.com/43752457/127745612-b2ad0012-cd99-49bc-963a-8c46c4ccc4ea.png">
 
+## DEPLOYMENT ENVIORMENT CURRENTLY DOWN. WORKING ON FIX! SORRY FOR THE INCOVENIENCE.
+
 
 ## Framer Motion Shop
 
