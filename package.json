@@ -1,12 +1,15 @@
 {
   "name": "pokedex",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "main": "index.js",
+  "homepage": "https://edisonabdiel.github.io/Shopper",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^0.21.1",
